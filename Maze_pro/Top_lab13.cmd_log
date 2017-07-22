@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "E:/3140102441/Maze_pro/Top_lab13.xst" -ofn "E:/3140102441/Maze_pro/Top_lab13.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Top_lab13.ngc Top_lab13.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_lab13_map.ncd Top_lab13.ngd Top_lab13.pcf 
+par -w -intstyle ise -ol high -mt off Top_lab13_map.ncd Top_lab13.ncd Top_lab13.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_lab13.twx Top_lab13.ncd -o Top_lab13.twr Top_lab13.pcf 
+bitgen -intstyle ise -f Top_lab13.ut Top_lab13.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/Org-Sword.ucf -p xc7k160t-ffg676-2L Top_lab13.ngc Top_lab13.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_lab13_map.ncd Top_lab13.ngd Top_lab13.pcf 
+par -w -intstyle ise -ol high -mt off Top_lab13_map.ncd Top_lab13.ncd Top_lab13.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_lab13.twx Top_lab13.ncd -o Top_lab13.twr Top_lab13.pcf 
+bitgen -intstyle ise -f Top_lab13.ut Top_lab13.ncd 
+xst -intstyle ise -ifn "E:/3140102441/Maze_pro/Top_lab13.xst" -ofn "E:/3140102441/Maze_pro/Top_lab13.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/Org-Sword.ucf -p xc7k160t-ffg676-2L Top_lab13.ngc Top_lab13.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_lab13_map.ncd Top_lab13.ngd Top_lab13.pcf 
+par -w -intstyle ise -ol high -mt off Top_lab13_map.ncd Top_lab13.ncd Top_lab13.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_lab13.twx Top_lab13.ncd -o Top_lab13.twr Top_lab13.pcf 
+bitgen -intstyle ise -f Top_lab13.ut Top_lab13.ncd 

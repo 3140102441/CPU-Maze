@@ -1,0 +1,1022 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: Top_lab13.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_lab13.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_lab13"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Top_lab13
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"code" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\M_datapath_IO.v" into library work
+Parsing module <M_datapath>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\mulit_ctrl_IO.v" into library work
+Parsing module <ctrl>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\ipcore_dir\RAM_B.v" into library work
+Parsing module <RAM_B>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\VGA_ctrl.v" into library work
+Parsing module <VGA_ctrl>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\SSeg7_Dev_IO.v" into library work
+Parsing module <SSeg7_Dev>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\SPIO_IO.v" into library work
+Parsing module <SPIO>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\Multi_8CH32_IO.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\MIO_BUS.v" into library work
+Parsing module <MIO_BUS>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\MCPU.v" into library work
+Parsing module <MCPU>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\Counter_3_IO.v" into library work
+Parsing module <Counter_x>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "E:\3140102441\Maze_pro\code\Top.v" into library work
+Parsing module <Top_lab13>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "E:\3140102441\Maze_pro\code\Top.v" Line 116: Port CPU_MIO is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:\3140102441\Maze_pro\code\Top.v" Line 130: Port dinb is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:\3140102441\Maze_pro\code\Top.v" Line 149: Port GPIOf0 is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:\3140102441\Maze_pro\code\Top.v" Line 155: Port x_ptr is not connected to this instance
+
+Elaborating module <Top_lab13>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\3140102441\Maze_pro\code\Top.v" Line 97: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <clk_div>.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\3140102441\Maze_pro\code\Top.v" Line 107: Assignment to Ai ignored, since the identifier is never used
+
+Elaborating module <SSeg7_Dev>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
+
+Elaborating module <MCPU>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND2>.
+
+Elaborating module <ctrl>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\mulit_ctrl_IO.v" Line 21: Empty module <ctrl> remains a black box.
+
+Elaborating module <M_datapath>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\M_datapath_IO.v" Line 21: Empty module <M_datapath> remains a black box.
+
+Elaborating module <MIO_BUS>.
+
+Elaborating module <RAM_B>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+
+Elaborating module <Counter_x>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\Counter_3_IO.v" Line 21: Empty module <Counter_x> remains a black box.
+
+Elaborating module <Multi_8CH32>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+
+Elaborating module <SPIO>.
+WARNING:HDLCompiler:1499 - "E:\3140102441\Maze_pro\code\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
+
+Elaborating module <VGA_ctrl>.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 60: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 67: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 75: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 76: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 77: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 78: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "E:\3140102441\Maze_pro\code\VGA_ctrl.v" Line 79: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:552 - "E:\3140102441\Maze_pro\code\Top.v" Line 130: Input port dinb[31] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_lab13>.
+    Related source file is "E:\3140102441\Maze_pro\code\Top.v".
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 95: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 105: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 105: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 105: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 116: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 149: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 155: Output port <x_ptr> of the instance <U11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 155: Output port <y_ptr> of the instance <U11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\3140102441\Maze_pro\code\Top.v" line 155: Output port <valid> of the instance <U11> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Top_lab13> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "E:\3140102441\Maze_pro\code\clk_div.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_3_o_add_0_OUT> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <MCPU>.
+    Related source file is "E:\3140102441\Maze_pro\code\MCPU.v".
+WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MCPU> synthesized.
+
+Synthesizing Unit <MIO_BUS>.
+    Related source file is "E:\3140102441\Maze_pro\code\MIO_BUS.v".
+WARNING:Xst:647 - Input <SW<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr_bus<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr_bus<27:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <led_out> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred  18 Multiplexer(s).
+Unit <MIO_BUS> synthesized.
+
+Synthesizing Unit <VGA_ctrl>.
+    Related source file is "E:\3140102441\Maze_pro\code\VGA_ctrl.v".
+    Found 10-bit register for signal <cnt_x>.
+    Found 10-bit register for signal <cnt_y>.
+    Found 14-bit adder for signal <n0081> created at line 52.
+    Found 14-bit adder for signal <n0084> created at line 52.
+    Found 14-bit adder for signal <BUS_0001_GND_16_o_add_4_OUT> created at line 52.
+    Found 14-bit adder for signal <n0089> created at line 54.
+    Found 14-bit adder for signal <n0092> created at line 54.
+    Found 14-bit adder for signal <BUS_0004_GND_16_o_add_8_OUT> created at line 54.
+    Found 10-bit adder for signal <cnt_x[9]_GND_16_o_add_13_OUT> created at line 60.
+    Found 10-bit adder for signal <cnt_y[9]_GND_16_o_add_20_OUT> created at line 67.
+    Found 10-bit subtractor for signal <x_ptr> created at line 30.
+    Found 10-bit subtractor for signal <y_ptr> created at line 31.
+WARNING:Xst:737 - Found 1-bit latch for signal <judge>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator lessequal for signal <cnt_x[9]_GND_16_o_LessThan_26_o> created at line 71
+    Found 10-bit comparator lessequal for signal <cnt_y[9]_GND_16_o_LessThan_27_o> created at line 72
+    Found 10-bit comparator lessequal for signal <n0026> created at line 73
+    Found 10-bit comparator greater for signal <cnt_x[9]_PWR_16_o_LessThan_29_o> created at line 73
+    Found 10-bit comparator lessequal for signal <n0030> created at line 73
+    Found 10-bit comparator greater for signal <cnt_y[9]_PWR_16_o_LessThan_31_o> created at line 73
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   6 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <VGA_ctrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 2
+ 14-bit adder                                          : 4
+ 32-bit adder                                          : 1
+# Registers                                            : 3
+ 10-bit register                                       : 2
+ 32-bit register                                       : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 6
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 4
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 13
+ 14-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <code/SAnti_jitter.ngc>.
+Reading core <code/SEnter_2_32.ngc>.
+Reading core <code/SSeg7_Dev.ngc>.
+Reading core <ipcore_dir/RAM_B.ngc>.
+Reading core <code/Counter_x.ngc>.
+Reading core <code/Multi_8CH32.ngc>.
+Reading core <code/SPIO.ngc>.
+Reading core <code/M_datapath.ngc>.
+Reading core <code/ctrl.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <U9>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <SSeg7_Dev> for timing and area information for instance <U6>.
+Loading core <RAM_B> for timing and area information for instance <U3>.
+Loading core <Counter_x> for timing and area information for instance <U10>.
+Loading core <Multi_8CH32> for timing and area information for instance <U5>.
+Loading core <SPIO> for timing and area information for instance <U7>.
+Loading core <M_datapath> for timing and area information for instance <U1_2>.
+Loading core <ctrl> for timing and area information for instance <U11>.
+
+Synthesizing (advanced) Unit <VGA_ctrl>.
+The following registers are absorbed into counter <cnt_x>: 1 register on signal <cnt_x>.
+The following registers are absorbed into counter <cnt_y>: 1 register on signal <cnt_y>.
+Unit <VGA_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clk_div> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 10-bit subtractor                                     : 2
+ 14-bit adder                                          : 4
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Comparators                                          : 6
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 4
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 12
+ 14-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Top_lab13> ...
+
+Optimizing unit <MIO_BUS> ...
+
+Optimizing unit <VGA_ctrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_lab13, actual ratio is 2.
+INFO:Xst:2260 - The FF/Latch <IR/Q_20> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_20_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_21> in Unit <U1/U1_2> is equivalent to the following 3 FFs/Latches : <IR/Q_21_1> <IR/Q_21_2> <IR/Q_21_3> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_16> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_16_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_22> in Unit <U1/U1_2> is equivalent to the following 3 FFs/Latches : <IR/Q_22_1> <IR/Q_22_2> <IR/Q_22_3> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_17> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_17_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_25> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_25_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_20> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_20_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_21> in Unit <U1/U1_2> is equivalent to the following 3 FFs/Latches : <IR/Q_21_1> <IR/Q_21_2> <IR/Q_21_3> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_16> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_16_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_22> in Unit <U1/U1_2> is equivalent to the following 3 FFs/Latches : <IR/Q_22_1> <IR/Q_22_2> <IR/Q_22_3> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_17> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_17_1> 
+INFO:Xst:2260 - The FF/Latch <IR/Q_25> in Unit <U1/U1_2> is equivalent to the following FF/Latch : <IR/Q_25_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_lab13.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4033
+#      AND2                        : 11
+#      AND3                        : 88
+#      AND4                        : 72
+#      GND                         : 5
+#      INV                         : 91
+#      LUT1                        : 117
+#      LUT2                        : 86
+#      LUT3                        : 1214
+#      LUT4                        : 265
+#      LUT5                        : 376
+#      LUT6                        : 1118
+#      MUXCY                       : 216
+#      MUXF7                       : 53
+#      OR2                         : 57
+#      OR3                         : 24
+#      OR4                         : 32
+#      VCC                         : 6
+#      XOR2                        : 1
+#      XORCY                       : 201
+# FlipFlops/Latches                : 1672
+#      FD                          : 253
+#      FDC                         : 108
+#      FDCE                        : 1062
+#      FDCE_1                      : 15
+#      FDE                         : 158
+#      FDE_1                       : 14
+#      FDP                         : 6
+#      FDPE                        : 1
+#      FDPE_1                      : 3
+#      FDR                         : 12
+#      FDRE                        : 39
+#      LDP                         : 1
+# RAMS                             : 15
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 14
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 52
+#      IBUF                        : 21
+#      OBUF                        : 31
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1672  out of  202800     0%  
+ Number of Slice LUTs:                 3267  out of  101400     3%  
+    Number used as Logic:              3267  out of  101400     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4490
+   Number with an unused Flip Flop:    2818  out of   4490    62%  
+   Number with an unused LUT:          1223  out of   4490    27%  
+   Number of fully used LUT-FF pairs:   449  out of   4490    10%  
+   Number of unique control sets:        38
+
+IO Utilization: 
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of    400    13%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of    325     4%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+clk_100mhz                         | BUFGP                       | 280   |
+U8/clkdiv_1                        | BUFG                        | 20    |
+N1                                 | NONE(U11/judge)             | 1     |
+U9/clk1                            | BUFG                        | 41    |
+M4/push(M4/push1:O)                | NONE(*)(M4/state_0)         | 3     |
+IO_clk(IO_clk1:O)                  | BUFG(*)(U10/counter0_Lock_0)| 141   |
+U8/clkdiv_8                        | BUFG                        | 35    |
+Clk_CPU(U8/Mmux_Clk_CPU11:O)       | BUFG(*)(U1/U1_2/PC/Q_31)    | 1166  |
+-----------------------------------+-----------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                                                                                                                              | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+U3/N1(U3/XST_GND:G)                | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram)| 28    |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.251ns (Maximum Frequency: 121.196MHz)
+   Minimum input arrival time before clock: 2.109ns
+   Maximum output required time after clock: 2.575ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 6.468ns (frequency: 154.598MHz)
+  Total number of paths / destination ports: 13204 / 333
+-------------------------------------------------------------------------
+Delay:               6.468ns (Levels of Logic = 11)
+  Source:            U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       U6/M2/buffer_60 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram to U6/M2/buffer_60
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO0    1   1.800   0.522  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (douta<0>)
+     end scope: 'U3:douta<0>'
+     LUT5:I1->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus1 (Data_in<0>)
+     begin scope: 'U5:data6<0>'
+     LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_3 (MUX1_DispData/Mmux_o_3)
+     MUXF7:I1->O          14   0.178   0.411  MUX1_DispData/Mmux_o_2_f7 (Disp_num<0>)
+     end scope: 'U5:Disp_num<0>'
+     begin scope: 'U6:Hexs<0>'
+     INV:I->O              6   0.054   0.641  SM1/HTS7/MSEG/XLXI_4 (SM1/HTS7/MSEG/XLXN_24)
+     AND4:I0->O            1   0.043   0.613  SM1/HTS7/MSEG/XLXI_28 (SM1/HTS7/MSEG/XLXN_141)
+     OR4:I0->O             1   0.043   0.603  SM1/HTS7/MSEG/XLXI_29 (SM1/HTS7/MSEG/XLXN_211)
+     OR2:I1->O             1   0.043   0.405  SM1/HTS7/MSEG/XLXI_50 (XLXN_390<60>)
+     LUT6:I4->O            1   0.043   0.405  M2/mux12011 (M2/state[1]_GND_3_o_wide_mux_15_OUT<60>)
+     LUT3:I1->O            1   0.043   0.000  M2/buffer_60_rstpot (M2/buffer_60_rstpot)
+     FD:D                     -0.000          M2/buffer_60
+    ----------------------------------------
+    Total                      6.468ns (2.333ns logic, 4.135ns route)
+                                       (36.1% logic, 63.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U8/clkdiv_1'
+  Clock period: 2.840ns (frequency: 352.106MHz)
+  Total number of paths / destination ports: 510 / 50
+-------------------------------------------------------------------------
+Delay:               2.840ns (Levels of Logic = 3)
+  Source:            U11/cnt_x_6 (FF)
+  Destination:       U11/cnt_y_0 (FF)
+  Source Clock:      U8/clkdiv_1 rising
+  Destination Clock: U8/clkdiv_1 rising
+
+  Data Path: U11/cnt_x_6 to U11/cnt_y_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.236   0.534  U11/cnt_x_6 (U11/cnt_x_6)
+     LUT3:I0->O            1   0.043   0.613  U11/cnt_x[9]_PWR_16_o_equal_13_o<9>11 (U11/cnt_x[9]_PWR_16_o_equal_13_o<9>1)
+     LUT6:I0->O           12   0.043   0.674  U11/cnt_x[9]_PWR_16_o_equal_13_o<9> (U11/cnt_x[9]_PWR_16_o_equal_13_o)
+     LUT6:I0->O           10   0.043   0.389  U11/Mcount_cnt_y_val (U11/Mcount_cnt_y_val)
+     FDRE:R                    0.264          U11/cnt_y_0
+    ----------------------------------------
+    Total                      2.840ns (0.629ns logic, 2.211ns route)
+                                       (22.1% logic, 77.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U9/clk1'
+  Clock period: 2.152ns (frequency: 464.587MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.152ns (Levels of Logic = 7)
+  Source:            U9/counter_8 (FF)
+  Destination:       U9/Key_x_0 (FF)
+  Source Clock:      U9/clk1 rising
+  Destination Clock: U9/clk1 rising
+
+  Data Path: U9/counter_8 to U9/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.043   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.013   0.378  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.054   0.373  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.161          Key_x_0
+    ----------------------------------------
+    Total                      2.152ns (0.786ns logic, 1.366ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/push'
+  Clock period: 1.069ns (frequency: 935.060MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.069ns (Levels of Logic = 1)
+  Source:            M4/state_0 (FF)
+  Destination:       M4/state_0 (FF)
+  Source Clock:      M4/push rising
+  Destination Clock: M4/push rising
+
+  Data Path: M4/state_0 to M4/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.440  state_0 (state<0>)
+     INV:I->O              1   0.054   0.339  Result<0>1_INV_0 (Result<0>)
+     FDE:D                    -0.000          state_0
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IO_clk'
+  Clock period: 2.840ns (frequency: 352.149MHz)
+  Total number of paths / destination ports: 351 / 80
+-------------------------------------------------------------------------
+Delay:               1.420ns (Levels of Logic = 2)
+  Source:            U7/counter_set_1 (FF)
+  Destination:       U10/counter0_Lock_0 (FF)
+  Source Clock:      IO_clk falling
+  Destination Clock: IO_clk rising
+
+  Data Path: U7/counter_set_1 to U10/counter0_Lock_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           3   0.240   0.507  counter_set_1 (counter_set<1>)
+     end scope: 'U7:counter_set<1>'
+     begin scope: 'U10:counter_ch<1>'
+     LUT3:I0->O           32   0.043   0.469  _n0094<1>11 (_n0094<1>1)
+     FDCE:CE                   0.161          counter0_Lock_0
+    ----------------------------------------
+    Total                      1.420ns (0.444ns logic, 0.976ns route)
+                                       (31.3% logic, 68.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U8/clkdiv_8'
+  Clock period: 1.958ns (frequency: 510.778MHz)
+  Total number of paths / destination ports: 788 / 36
+-------------------------------------------------------------------------
+Delay:               1.958ns (Levels of Logic = 35)
+  Source:            U10/counter0_0 (FF)
+  Destination:       U10/counter0_32 (FF)
+  Source Clock:      U8/clkdiv_8 rising
+  Destination Clock: U8/clkdiv_8 rising
+
+  Data Path: U10/counter0_0 to U10/counter0_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.236   0.367  counter0_0 (counter_out<0>)
+     LUT1:I0->O            1   0.043   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<0>_rt (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.238   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<0> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<1> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<2> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<3> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<4> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<5> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<6> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<7> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<8> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<9> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<10> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<11> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<12> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<13> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<14> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<15> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<16> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<17> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<18> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<19> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<20> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<21> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<22> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<23> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<24> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<25> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<26> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<27> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<28> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<29> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<29>)
+     MUXCY:CI->O           1   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<30> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<30>)
+     MUXCY:CI->O           0   0.013   0.000  Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<31> (Msub_counter0[32]_GND_1_o_sub_26_OUT_cy<31>)
+     XORCY:CI->O           1   0.262   0.350  Msub_counter0[32]_GND_1_o_sub_26_OUT_xor<32> (counter0[32]_GND_1_o_sub_26_OUT<32>)
+     LUT6:I5->O            1   0.043   0.000  Mmux_counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT261 (counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT<32>)
+     FDC:D                    -0.000          counter0_32
+    ----------------------------------------
+    Total                      1.958ns (1.240ns logic, 0.717ns route)
+                                       (63.4% logic, 36.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_CPU'
+  Clock period: 8.251ns (frequency: 121.196MHz)
+  Total number of paths / destination ports: 3712806 / 2233
+-------------------------------------------------------------------------
+Delay:               8.251ns (Levels of Logic = 41)
+  Source:            U1/U1_2/U2/register_31_224 (FF)
+  Destination:       U1/U1_2/PC/Q_31 (FF)
+  Source Clock:      Clk_CPU rising
+  Destination Clock: Clk_CPU rising
+
+  Data Path: U1/U1_2/U2/register_31_224 to U1/U1_2/PC/Q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.236   0.625  U2/register_31_224 (U2/register_31<224>)
+     LUT6:I0->O            1   0.043   0.522  U2/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_81 (U2/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_81)
+     LUT6:I2->O            1   0.043   0.405  U2/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_3 (U2/Mmux_R_addr_A[4]_register[31][31]_wide_mux_1_OUT_3)
+     LUT6:I4->O            4   0.043   0.422  MUX4/Mmux_o11 (XLXN_746<0>)
+     LUT3:I1->O            1   0.043   0.000  U1/ADC_32/Madd_S_Madd_lut<0> (U1/ADC_32/Madd_S_Madd_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  U1/ADC_32/Madd_S_Madd_cy<0> (U1/ADC_32/Madd_S_Madd_cy<0>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<1> (U1/ADC_32/Madd_S_Madd_cy<1>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<2> (U1/ADC_32/Madd_S_Madd_cy<2>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<3> (U1/ADC_32/Madd_S_Madd_cy<3>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<4> (U1/ADC_32/Madd_S_Madd_cy<4>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<5> (U1/ADC_32/Madd_S_Madd_cy<5>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<6> (U1/ADC_32/Madd_S_Madd_cy<6>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<7> (U1/ADC_32/Madd_S_Madd_cy<7>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<8> (U1/ADC_32/Madd_S_Madd_cy<8>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<9> (U1/ADC_32/Madd_S_Madd_cy<9>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<10> (U1/ADC_32/Madd_S_Madd_cy<10>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<11> (U1/ADC_32/Madd_S_Madd_cy<11>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<12> (U1/ADC_32/Madd_S_Madd_cy<12>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<13> (U1/ADC_32/Madd_S_Madd_cy<13>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<14> (U1/ADC_32/Madd_S_Madd_cy<14>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<15> (U1/ADC_32/Madd_S_Madd_cy<15>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<16> (U1/ADC_32/Madd_S_Madd_cy<16>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<17> (U1/ADC_32/Madd_S_Madd_cy<17>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<18> (U1/ADC_32/Madd_S_Madd_cy<18>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<19> (U1/ADC_32/Madd_S_Madd_cy<19>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<20> (U1/ADC_32/Madd_S_Madd_cy<20>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<21> (U1/ADC_32/Madd_S_Madd_cy<21>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<22> (U1/ADC_32/Madd_S_Madd_cy<22>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<23> (U1/ADC_32/Madd_S_Madd_cy<23>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<24> (U1/ADC_32/Madd_S_Madd_cy<24>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<25> (U1/ADC_32/Madd_S_Madd_cy<25>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<26> (U1/ADC_32/Madd_S_Madd_cy<26>)
+     MUXCY:CI->O           1   0.014   0.000  U1/ADC_32/Madd_S_Madd_cy<27> (U1/ADC_32/Madd_S_Madd_cy<27>)
+     XORCY:CI->O           2   0.262   0.527  U1/ADC_32/Madd_S_Madd_xor<28> (U1/S<28>)
+     LUT6:I2->O            1   0.043   0.350  U1/ALU_Zero/A[31]_GND_15_o_equal_1_o<31>4 (U1/ALU_Zero/A[31]_GND_15_o_equal_1_o<31>3)
+     LUT6:I5->O            1   0.043   0.350  U1/ALU_Zero/A[31]_GND_15_o_equal_1_o<31>2_SW0_SW0_SW0 (N70)
+     LUT6:I5->O            1   0.043   0.613  U1/ALU_Zero/A[31]_GND_15_o_equal_1_o<31>8 (zero)
+     XOR2:I0->O            1   0.043   0.339  XLXI_4 (XLXN_911)
+     INV:I->O              1   0.054   0.613  XLXI_7 (XLXN_887)
+     AND2:I0->O            1   0.043   0.613  XLXI_5 (XLXN_905)
+     OR2:I0->O             1   0.043   0.613  XLXI_11 (XLXN_910)
+     AND2:I0->O           32   0.043   0.469  XLXI_6 (XLXN_929)
+     FDCE:CE                   0.161          PC/Q_0
+    ----------------------------------------
+    Total                      8.251ns (1.789ns logic, 6.463ns route)
+                                       (21.7% logic, 78.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.089ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       U9/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to U9/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.625  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'U9:SW<2>'
+     LUT6:I0->O            1   0.043   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.013   0.471  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.054   0.429  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.161          SW_OK_0
+    ----------------------------------------
+    Total                      2.089ns (0.563ns logic, 1.525ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U9/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.109ns (Levels of Logic = 6)
+  Source:            BTN_y<3> (PAD)
+  Destination:       U9/Key_x_1 (FF)
+  Destination Clock: U9/clk1 rising
+
+  Data Path: BTN_y<3> to U9/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.550  BTN_y_3_IBUF (BTN_y_3_IBUF)
+     begin scope: 'U9:Key_y<3>'
+     LUT4:I0->O           12   0.043   0.674  out1 (n0016)
+     LUT6:I0->O            3   0.043   0.362  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.043   0.350  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.043   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                    -0.000          Key_x_4
+    ----------------------------------------
+    Total                      2.109ns (0.172ns logic, 1.937ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U9/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.658ns (Levels of Logic = 2)
+  Source:            U9/Key_x_4 (FF)
+  Destination:       BTN_x<4> (PAD)
+  Source Clock:      U9/clk1 rising
+
+  Data Path: U9/Key_x_4 to BTN_x<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.236   0.422  Key_x_4 (Key_x<4>)
+     end scope: 'U9:Key_x<4>'
+     OBUF:I->O                 0.000          BTN_x_4_OBUF (BTN_x<4>)
+    ----------------------------------------
+    Total                      0.658ns (0.236ns logic, 0.422ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/clkdiv_1'
+  Total number of paths / destination ports: 326 / 14
+-------------------------------------------------------------------------
+Offset:              2.575ns (Levels of Logic = 5)
+  Source:            U11/cnt_y_4 (FF)
+  Destination:       Red<3> (PAD)
+  Source Clock:      U8/clkdiv_1 rising
+
+  Data Path: U11/cnt_y_4 to Red<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.236   0.534  U11/cnt_y_4 (U11/cnt_y_4)
+     LUT3:I0->O            2   0.043   0.410  U11/vs21 (U11/vs2)
+     LUT6:I4->O            1   0.043   0.350  U11/valid3 (U11/valid3)
+     LUT6:I5->O           26   0.043   0.534  U11/valid4 (U11/valid)
+     LUT2:I0->O            1   0.043   0.339  U11/Mmux_n004311 (Blue_0_OBUF)
+     OBUF:I->O                 0.000          Blue_0_OBUF (Blue<0>)
+    ----------------------------------------
+    Total                      2.575ns (0.408ns logic, 2.167ns route)
+                                       (15.8% logic, 84.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 20 / 13
+-------------------------------------------------------------------------
+Offset:              2.537ns (Levels of Logic = 3)
+  Source:            U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       Blue<0> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram to Blue<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO0    2   1.800   0.355  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram (doutb<0>)
+     end scope: 'U3:doutb<0>'
+     LUT2:I1->O            1   0.043   0.339  U11/Mmux_n004311 (Blue_0_OBUF)
+     OBUF:I->O                 0.000          Blue_0_OBUF (Blue<0>)
+    ----------------------------------------
+    Total                      2.537ns (1.843ns logic, 0.694ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IO_clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.592ns (Levels of Logic = 2)
+  Source:            U7/P2S_led/s_clk (FF)
+  Destination:       led_clk (PAD)
+  Source Clock:      IO_clk rising
+
+  Data Path: U7/P2S_led/s_clk to led_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.236   0.356  P2S_led/s_clk (led_clk)
+     end scope: 'U7:led_clk'
+     OBUF:I->O                 0.000          led_clk_OBUF (led_clk)
+    ----------------------------------------
+    Total                      0.592ns (0.236ns logic, 0.356ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_CPU
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |    8.251|         |         |         |
+U8/clkdiv_8    |    1.266|         |         |         |
+U9/clk1        |    1.100|         |         |         |
+clk_100mhz     |    2.365|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IO_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |    3.407|         |    3.316|         |
+IO_clk         |    1.876|    1.420|         |         |
+U8/clkdiv_8    |    1.237|         |         |         |
+clk_100mhz     |    1.719|         |    1.500|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M4/push        |    1.069|         |         |         |
+U9/clk1        |    0.824|         |         |         |
+clk_100mhz     |    1.340|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock N1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |         |         |    5.757|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U8/clkdiv_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U8/clkdiv_1    |    2.840|         |         |         |
+clk_100mhz     |    1.581|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U8/clkdiv_8
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_clk         |    1.903|         |         |         |
+U8/clkdiv_8    |    1.958|         |         |         |
+clk_100mhz     |    1.620|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U9/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U9/clk1        |    2.152|         |         |         |
+clk_100mhz     |    1.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |    7.193|         |         |         |
+IO_clk         |    4.153|         |         |         |
+M4/push        |    1.928|         |         |         |
+N1             |         |    3.718|         |         |
+U8/clkdiv_1    |    4.967|         |         |         |
+U8/clkdiv_8    |    5.370|         |         |         |
+U9/clk1        |    5.204|         |         |         |
+clk_100mhz     |    6.468|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.04 secs
+ 
+--> 
+
+Total memory usage is 253892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+
